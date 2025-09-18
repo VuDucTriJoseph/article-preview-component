@@ -20,6 +20,8 @@ main{
 
 .active{
     border-radius: inherit;
+    position: relative;
+    width: 100%;
     
 }
 .img-drawers{
@@ -30,20 +32,21 @@ main{
    
 }
 .info{
-    position: absolute;
+    position: relative;
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
     padding: 0.7rem 2rem;
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    z-index: -1;
+    z-index: 1;
 }
 .info img{
     width: 3rem;
     border-radius: 50%;
 }
 .bar-socialLink-icons{
+    width: inherit;
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
     background-color: hsl(217, 19%, 35%);
@@ -51,8 +54,10 @@ main{
     gap: 1.5rem;
     align-items: center;
     padding: 0.7rem 2rem;
-    /* position: absolute; */
-    z-index: 1;
+    position: absolute;
+    top: 0;
+
+    z-index: 2;
     
 }
 .bar-socialLink-icons p{
@@ -62,7 +67,10 @@ main{
     letter-spacing: 0.5rem;
 }
 .share{
-    /* position: absolute; */
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    align-items: center;
     border: none;
     border-radius: 50%;
     width: 2.5rem;
@@ -70,5 +78,6 @@ main{
     background-color: hsl(210, 46%, 95%);
     float: right;
     margin-right: 2rem;
+    z-index: 3;
     
 }
